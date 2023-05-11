@@ -135,7 +135,7 @@ For `optim_lbfgs()`, `step()` needs to be called passing in an anonymous functio
 ```{r}
 calc_loss <- function() {
   optimizer$zero_grad()
-  value <- rosenbrock(x_star)
+  value <- rosenbrock(x)
   value$backward()
   value
 }
